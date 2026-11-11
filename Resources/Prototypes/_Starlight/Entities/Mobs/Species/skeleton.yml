@@ -41,14 +41,13 @@
       100: Critical
       150: Dead
   - type: TransferMindOnGib
-  # Gear - remove gibbing
-  #- type: Destructible
-  #  thresholds:
-  #  - trigger:
-  #      !type:DamageTrigger
-  #      damage: 150
-  #    behaviors:
-  #    - !type:GibBehavior { }
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:GibBehavior { }
   - type: SlowOnDamage #modified speeds because they're so weak
     speedModifierThresholds:
       60: 0.9
