@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Space Station 14" width="600" src="Resources/Textures/Logo/logo.png" />
+  <img alt="Space Station 14" width="600" src="Resources/Textures/_Gearstation/Logo/logo.png" />
 </p>
 
 <div class="header" align="center">
@@ -9,7 +9,7 @@
 [![Starlight Client](https://img.shields.io/badge/Starlight_Client-Download-blue)](https://github.com/ss14Starlight/Starlight.Launcher)
 [![GitHub](https://img.shields.io/github/stars/ss14Starlight/space-station-14?style=social)]([https://github.com/ss14Starlight/space-station-14])
 
-# STARLIGHT
+# Gear Station
 <sub>Space-Station 14</sub>
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ss14Starlight/space-station-14)
