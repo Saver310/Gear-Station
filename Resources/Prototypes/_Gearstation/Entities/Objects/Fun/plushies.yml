@@ -1,0 +1,30 @@
+- type: entity
+  parent: PlushieMoth
+  id: PlushieMothDeathshead
+  name: bartender moth plushie
+  description: A fluffy plushie resembling a certain moth bartender. The tiny text reads "Do not give alcohol after midnight".
+  components:
+  - type: Sprite
+    sprite: _Gearstation/Objects/Fun/Plushies/deathshead.rsi
+    state: icon
+  - type: ReactionMixer
+    mixMessage: "spoon-mixing-success"
+    timeToMix: 0.5
+    reactionTypes:
+    - Stir
+  - type: Clothing
+    sprite: _Gearstation/Objects/Fun/Plushies/deathshead.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    attackRate: 1
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+      - ReagentId: Whiskey
+        Quantity: 10
+      - ReagentId: DrGibb
+        Quantity: 5
+
