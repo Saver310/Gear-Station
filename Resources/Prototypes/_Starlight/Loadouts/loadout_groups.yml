@@ -995,6 +995,7 @@
 - type: loadoutGroup
   id: EliteSecurityMask
   name: loadout-group-security-mask-elite
+  minLimit: 0 # Gear - no forced masks
   loadouts:
     - MaskGasSecurity
     - BreathMaskMedicalSecurity
@@ -1004,6 +1005,7 @@
 - type: loadoutGroup
   id: SecurityMask
   name: loadout-group-security-mask
+  minLimit: 0 # Gear - no forced masks
   loadouts:
     - MaskGasSecurity
     - BreathMaskMedicalSecurityBudget
