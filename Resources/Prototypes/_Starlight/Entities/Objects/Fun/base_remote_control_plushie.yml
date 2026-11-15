@@ -21,7 +21,6 @@
   - type: StunVisuals
   - type: LanguageSpeaker
   - type: ParentCanBlockVision
-  - type: TextToSpeech
   - type: Physics
     bodyType: KinematicController
   - type: MobCollision
