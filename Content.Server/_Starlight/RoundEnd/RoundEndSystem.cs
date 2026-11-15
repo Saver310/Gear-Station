@@ -38,6 +38,7 @@ public sealed partial class RoundEndSystem
         _countdownTokenSource = new CancellationTokenSource();
 
         countdownTime ??= TimeSpan.FromSeconds(_cfg.GetCVar(CCVars.RoundRestartTime));
+        InitializeRoundEndExtension(countdownTime.Value); // Moff - Round end extension vote
         int time;
         string unitsLocString;
         if (countdownTime.Value.TotalDays >= 1)
