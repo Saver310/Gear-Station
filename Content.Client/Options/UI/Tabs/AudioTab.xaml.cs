@@ -71,6 +71,11 @@ public sealed partial class AudioTab : Control
             SliderMusicRadio,
             scale: ContentAudioSystem.AmbientMusicMultiplier);
 
+        // Gear-start - vacuum hearing slider
+        Control.AddOptionPercentSlider(
+            GearCCVars.VacuumHearingMultiplier,
+            SliderVacuumHearing);
+        // Gear-end - vacuum hearing slider
 
 
         // Per-category volumes are gain multipliers defaulting to 1, so the slider starts at 50% with room to boost.
