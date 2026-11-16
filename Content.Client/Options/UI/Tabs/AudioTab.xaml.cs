@@ -11,6 +11,7 @@ using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.Maths;
 using Content.Client._Starlight.Options.UI;
+using Content.Shared._Gearstation.CCVar; // Gear - vacuum hearing slider
 
 namespace Content.Client.Options.UI.Tabs;
 
