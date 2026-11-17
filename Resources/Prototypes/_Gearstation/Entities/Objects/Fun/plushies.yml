@@ -78,3 +78,19 @@
     soundHit: *PlushieMothScreamFirewalker
   - type: Edible
     useSound: *PlushieMothScreamFirewalker
+
+- type: entity
+  parent: PlushieMoth
+  id: PlushieMothPlushann
+  name: so-called best lawyer moth plushie
+  description: A fluffy plushie resembling a certain moth lawyer in a fancy red suit. He seems ready to sue you.
+  components:
+  - type: Sprite
+    sprite: _Gearstation/Objects/Fun/Plushies/plushieann.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Gearstation/Objects/Fun/Plushies/plushieann.rsi
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    attackRate: 1
