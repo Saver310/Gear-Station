@@ -52,3 +52,15 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 2
+
+- type: listing
+  id: VendorPlushieAvaliKira
+  productEntity: PlushieAvaliKira
+  cost:
+    NTCredit: 20
+  categories:
+    - SLCrew
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
+
