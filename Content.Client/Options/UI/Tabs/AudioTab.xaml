@@ -43,6 +43,7 @@
                         <sui:OptionSlider Name="SliderFootsteps" Title="{Loc 'ui-options-footsteps-volume'}" />
                         <sui:OptionSlider Name="SliderHandling" Title="{Loc 'ui-options-handling-volume'}" />
                         <sui:OptionSlider Name="SliderCombat" Title="{Loc 'ui-options-combat-volume'}" />
+                        <sui:OptionSlider Name="SliderVacuumHearing" Title="{Loc 'ui-options-vacuum-hearing'}"/> <!-- Gear - vacuum hearing slider -->
                     </BoxContainer>
                 </PanelContainer>
 

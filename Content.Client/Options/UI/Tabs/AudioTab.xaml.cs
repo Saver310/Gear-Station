@@ -11,6 +11,7 @@ using Robust.Shared;
 using Robust.Shared.Configuration;
 using Robust.Shared.Maths;
 using Content.Client._Starlight.Options.UI;
+using Content.Shared._Gearstation.CCVar; // Gear - vacuum hearing slider
 
 namespace Content.Client.Options.UI.Tabs;
 
@@ -71,6 +72,11 @@ public sealed partial class AudioTab : Control
             SliderMusicRadio,
             scale: ContentAudioSystem.AmbientMusicMultiplier);
 
+        // Gear-start - vacuum hearing slider
+        Control.AddOptionPercentSlider(
+            GearCCVars.VacuumHearingMultiplier,
+            SliderVacuumHearing);
+        // Gear-end - vacuum hearing slider
 
 
         // Per-category volumes are gain multipliers defaulting to 1, so the slider starts at 50% with room to boost.

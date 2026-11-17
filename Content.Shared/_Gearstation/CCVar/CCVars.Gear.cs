@@ -12,4 +12,10 @@ public sealed class GearCCVars
     public static readonly CVarDef<int> MaxAutoEvacRefuseMax =
         CVarDef.Create("gear.auto_evac_refuse_max", 2, CVar.SERVERONLY);
 
+    /// <summary>
+    ///     Option to lower the severity of muffling when in space.
+    /// </summary>
+    public static readonly CVarDef<float> VacuumHearingMultiplier =
+        CVarDef.Create("audio.vacuum_hearing_multiplier", 1f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
 }
