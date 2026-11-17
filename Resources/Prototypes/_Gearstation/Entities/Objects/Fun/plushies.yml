@@ -56,6 +56,7 @@
   components:
   - type: Sprite
     sprite: _Gearstation/Objects/Fun/Plushies/firewalker.rsi
+    state: icon
   - type: Clothing
     sprite: _Gearstation/Objects/Fun/Plushies/firewalker.rsi
   - type: GasAnalyzer
@@ -93,4 +94,49 @@
   - type: UseDelay
     delay: 1.0
   - type: MeleeWeapon
+    attackRate: 1
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieAvaliTwix
+  name: salvager avali plushie
+  description: A fluffy plushie resembling an Avalian salvager. Don't eat the cone.
+  components:
+  - type: Sprite
+    sprite: _Gearstation/Objects/Fun/Plushies/twix.rsi
+    state: icon
+  - type: Clothing
+    quickEquip: false
+    sprite: _Gearstation/Objects/Fun/Plushies/twix.rsi
+    slots:
+    - HEAD
+    clothingVisuals:
+      head:
+      - state: equipped-HELMET
+        offset: "0, 0.12"
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Starlight/Voice/Avali/avali_1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Starlight/Voice/Avali/avali_1.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/_Starlight/Voice/Avali/avali_1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/_Starlight/Voice/Avali/avali_1.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Starlight/Voice/Avali/avali_1.ogg
+  - type: Edible
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Starlight/Voice/Avali/avali_scream.ogg
+  - type: UseDelay
+    delay: 1.0
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Starlight/Voice/Avali/avali_1.ogg
     attackRate: 1
