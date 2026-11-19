@@ -1,0 +1,7 @@
+- type: antag
+  id: RelayOperator
+  name: ghost-role-information-relay-operator-name
+  antagonist: true
+  setPreference: false
+  objective: never-shown
+  playTimeTracker: AntagWizard # Starlight

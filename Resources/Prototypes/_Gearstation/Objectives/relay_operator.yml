@@ -1,0 +1,42 @@
+- type: weightedRandom
+  id: RelayOperatorObjectiveGroups
+  weights:
+    RelayOperatorObjectiveGroup: 1
+
+- type: weightedRandom
+  id: RelayOperatorObjectiveGroup
+  weights:
+    PanicObjective: 1
+    FalseUprisingObjective: 1
+    FeudObjective: 1
+    ImpersonateObjective: 1
+    RumorObjective: 1
+    FrameObjective: 1
+    PropagandaNanoObjective: 1
+    PropagandaSyndieObjective: 1
+    SurveyObjective: 1
+    PenpalObjective: 1
+
+- type: entity
+  parent: BaseStoryObjective
+  id: PropagandaNanoObjective
+  name: Distribute propaganda for NanoTrasen
+  description: Paint everyone else in a bad light.
+
+- type: entity
+  parent: BaseStoryObjective
+  id: PropagandaSyndieObjective
+  name: Distribute propaganda for the Syndicate
+  description: Paint everyone else in a bad light.
+
+- type: entity
+  parent: BaseStoryObjective
+  id: SurveyObjective
+  name: Conduct a survey
+  description: Send the results to whoever you want.
+
+- type: entity
+  parent: BaseStoryObjective
+  id: PenpalObjective
+  name: Find a new pen pal
+  description: Optionally stay anonymous.
