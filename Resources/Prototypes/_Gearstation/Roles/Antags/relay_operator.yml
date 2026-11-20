@@ -4,4 +4,24 @@
   antagonist: true
   setPreference: false
   objective: never-shown
-  playTimeTracker: AntagWizard # Starlight
+  playTimeTracker: AntagWizard
+
+- type: antagSpecifier
+  parent: RestrictedAntag
+  id: RelayOperator
+  prefRoles:
+  - RelayOperator
+  spawnerPrototype: SpawnPointRelayOperator
+  startingGear: LimitedAssistantGear
+  roleLoadout:
+  - RoleSurvivalStandar
+  briefing:
+    text: relay-operator-role-greeting
+    color: Turquoise
+    sound: "/Audio/Machines/printer.ogg"
+  allowNonHumans: true
+  blacklist:
+    components:
+    - AntagImmune
+  mindRoles:
+  - MindRoleGhostRoleFreeAgent

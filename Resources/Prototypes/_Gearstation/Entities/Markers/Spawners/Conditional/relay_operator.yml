@@ -1,11 +1,11 @@
 - type: entity
   id: SpawnPointRelayOperator
   parent: MarkerBase
-  name: wizard
+  name: relay operator
   components:
   - type: SpawnPoint
   - type: Sprite
     layers:
     - state: green
-    - sprite: Clothing/Head/Hats/wizardhat.rsi
+    - sprite: Structures/Machines/fax_machine.rsi
       state: icon

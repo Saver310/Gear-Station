@@ -9,12 +9,12 @@
     occursDuringRoundEnd: false
   - type: AntagRandomObjectives
     sets:
-        groups: RelayOperatorObjectiveGroups
+    - groups: RelayOperatorObjectiveGroups
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/_Starlight/Shuttles/ShuttleEvent/syndie_evacpod.yml # change
   - type: AntagSelection
-    agentName: wizard-round-end-name
+    agentName: relay-operator-round-end-name
     antags:
     - !type:FixedAntagCount
       proto: RelayOperator
