@@ -9,8 +9,15 @@
     duration: null
     occursDuringRoundEnd: false
   - type: AntagRandomObjectives
+    forcedObjectiveGroup: RelayOperatorForcedObjectives
+    storyObjectiveGroup: RelayOperatorStoryObjectives
+    storyObjectiveCount: 2
+    maxDifficulty: 4
     sets:
     - groups: RelayOperatorObjectiveGroup
+  - type: DynamicRuleCost
+    cost: 100
+
   - type: RuleGrids
   - type: LoadMapRule
     mapPath: /Maps/_Gearstation/fax_relay.yml

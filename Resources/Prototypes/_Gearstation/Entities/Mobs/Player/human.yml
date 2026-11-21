@@ -4,5 +4,8 @@
   parent: MobHuman
   id: MobHumanRelayOperator
   components:
+  - type: RandomMetadata
+    nameSegments:
+    - NamesBlackstarLegionnaireLast
   - type: RandomHumanoidAppearance
     randomizeName: true
