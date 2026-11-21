@@ -1,0 +1,8 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: RelayOperator
+  parent: MobHuman
+  id: MobHumanRelayOperator
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: true

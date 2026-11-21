@@ -4,20 +4,21 @@
   antagonist: true
   setPreference: false
   objective: never-shown
-  playTimeTracker: AntagWizard
+  playTimeTracker: AntagRelayOperator
 
 - type: antagSpecifier
   parent: RestrictedAntag
   id: RelayOperator
   prefRoles:
   - RelayOperator
-  spawnerPrototype: SpawnPointRelayOperator
-  startingGear: LimitedAssistantGear
+  spawnerPrototype: RelayOperatorSpawner
+  pickPlayer: false
+  startingGear: BlackstarInitiateGear
   roleLoadout:
-  - RoleSurvivalStandar
+  - RoleSurvivalStandard
   briefing:
     text: relay-operator-role-greeting
-    color: Turquoise
+    color: Yellow
     sound: "/Audio/Machines/printer.ogg"
   allowNonHumans: true
   blacklist:

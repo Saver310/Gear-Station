@@ -1,42 +1,110 @@
-- type: weightedRandom
-  id: RelayOperatorObjectiveGroups
-  weights:
-    RelayOperatorObjectiveGroup: 1
+- type: entity
+  abstract: true
+  parent: [ BaseObjective, BaseSurviveObjective ]
+  id: BaseRelayObjective
+  components:
+  - type: Objective
+    difficulty: 2
+    antag: null
+    issuer: objective-issuer-unknown
+    unique: true
+    icon:
+      sprite: _Starlight/Interface/Misc/objective_icons.rsi
+      state: rp
+  - type: SocialObjective
+
+- type: entity
+  abstract: true
+  parent: BaseRelayObjective
+  id: BaseRelayDepartmentObjective
+  components:
+  - type: ObjectiveBlacklistRequirement
+    blacklist:
+      components:
+      - DepartmentObjective
+  - type: PickRandomDepartment
 
 - type: weightedRandom
   id: RelayOperatorObjectiveGroup
   weights:
-    PanicObjective: 1
-    FalseUprisingObjective: 1
-    FeudObjective: 1
-    ImpersonateObjective: 1
-    RumorObjective: 1
-    FrameObjective: 1
+    RelayPanicObjective: 1
+    RelayFalseUprisingObjective: 1
+    RelayFeudObjective: 1
+    RelayImpersonateObjective: 1
+    RelayFrameObjective: 1
     PropagandaNanoObjective: 1
     PropagandaSyndieObjective: 1
     SurveyObjective: 1
     PenpalObjective: 1
+    PhotographyObjective: 1
 
 - type: entity
-  parent: BaseStoryObjective
+  parent: BaseRelayObjective
   id: PropagandaNanoObjective
+  issuer: objective-issuer-nanotrasen
   name: Distribute propaganda for NanoTrasen
   description: Paint everyone else in a bad light.
 
 - type: entity
-  parent: BaseStoryObjective
+  parent: BaseRelayObjective
   id: PropagandaSyndieObjective
+  issuer: objective-issuer-syndicate
   name: Distribute propaganda for the Syndicate
   description: Paint everyone else in a bad light.
 
 - type: entity
-  parent: BaseStoryObjective
+  parent: BaseRelayObjective
   id: SurveyObjective
+  issuer: objective-issuer-personal
   name: Conduct a survey
   description: Send the results to whoever you want.
 
 - type: entity
-  parent: BaseStoryObjective
+  parent: BaseRelayObjective
   id: PenpalObjective
+  issuer: objective-issuer-personal
   name: Find a new pen pal
   description: Optionally stay anonymous.
+
+- type: entity
+  parent: BaseRelayObjective
+  id: PhotographyObjective
+  issuer: objective-issuer-ecology
+  name: Share the beauty of your homeworld
+  description: Send pictures of the local flora and fauna
+
+# syndie objectives
+- type: entity
+  parent: BaseRelayObjective
+  id: RelayPanicObjective
+  name: Convince the station of the existence of a threat that isn't, to your knowledge, present.
+
+
+# department objectives
+- type: entity
+  parent: BaseRelayDepartmentObjective
+  id: RelayFalseUprisingObjective
+  components:
+    - type: DepartmentObjective
+      title: objective-false-uprising
+
+- type: entity
+  parent: BaseRelayDepartmentObjective
+  id: RelayFeudObjective
+  components:
+    - type: DepartmentObjective
+      title: objective-feud
+
+- type: entity
+  parent: BaseRelayDepartmentObjective
+  id: RelayImpersonateObjective
+  components:
+    - type: DepartmentObjective
+      title: objective-impersonate
+
+- type: entity
+  parent: BaseRelayDepartmentObjective
+  id: RelayFrameObjective
+  components:
+    - type: DepartmentObjective
+      title: objective-framing
