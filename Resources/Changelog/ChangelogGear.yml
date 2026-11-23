@@ -5,4 +5,12 @@ Entries:
     type: Add
   id: 1
   time: '2026-11-23'
+- author: Saver310
+  changes:
+  - message: Added "grant deafed author fore" lobby art.
+    type: Add
+  id: 3401
+  time: '2026-11-22T15:46:19.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/34
 Order: -1
+
