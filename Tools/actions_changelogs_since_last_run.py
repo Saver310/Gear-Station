@@ -16,8 +16,8 @@ import sys
 import yaml
 import time
 
-DEBUG = False
-DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/Old.yml")
+DEBUG = True
+DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/ChangelogGear.yml")
 GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
