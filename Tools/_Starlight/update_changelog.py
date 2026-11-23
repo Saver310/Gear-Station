@@ -72,8 +72,6 @@ def build_embed_for_pr(entries: list[dict[str,Any]], merge_time) -> dict[str, An
             if len(message) > 300:
                 message = message[:297].rstrip() + "..."
             line = f"{emoji} {message}"
-            if url:
-                line += f" ([#{pr_number}]({url}))"
             description_lines.append(line)
 
     description = "\n".join(description_lines)
