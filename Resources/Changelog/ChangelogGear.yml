@@ -19,5 +19,12 @@ Entries:
   id: 1201
   time: '2026-11-14T17:49:04.000000+00:00'
   url: https://github.com/gear-station/Gear-Station/pull/12
+- author: malyhob
+  changes:
+  - message: Added a temporary solution for discord changelogs.
+    type: Add
+  id: 3501
+  time: '2026-11-23T17:10:14.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/35
 Order: -1
 
