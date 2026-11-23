@@ -17,6 +17,7 @@ import yaml
 import time
 
 DEBUG = False
+COUNT_FAILS_DEBUG = True
 DEBUG_CHANGELOG_FILE_OLD = Path("Resources/Changelog/ChangelogGear.yml")
 GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 
@@ -102,7 +103,7 @@ def changelog_job_succeeded(sess: requests.Session, run: Any) -> bool:
     resp.raise_for_status()
     for job in resp.json().get("jobs", []):
         if job["name"] == CHANGELOG_JOB_NAME:
-            return job["status"] == "completed" and job["conclusion"] == "success"
+            return (job["status"] == "completed" and job["conclusion"] == "success") or COUNT_FAILS_DEBUG
     return False
 
 
