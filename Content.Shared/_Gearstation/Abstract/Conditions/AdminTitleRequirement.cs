@@ -4,6 +4,9 @@ using Content.Shared.Administration.Managers;
 
 namespace Content.Shared._Gearstation.Abstract.Conditions;
 
+/// <summary>
+/// Requires the player to have one of the admin titles provided.
+/// </summary>
 public sealed partial class AdminTitleRequirement : BaseRequirement
 {
     [Dependency] private ISharedAdminManager _adminManager = default!;
