@@ -33,5 +33,14 @@ Entries:
   id: 3801
   time: '2026-11-25T14:50:25.000000+00:00'
   url: https://github.com/gear-station/Gear-Station/pull/38
+- author: malyhob
+  changes:
+  - message: Removed Event ghost themes.
+    type: Remove
+  - message: Changed the requirements for ghost themes.
+    type: Tweak
+  id: 3601
+  time: '2026-11-25T14:52:46.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/36
 Order: -1
 
