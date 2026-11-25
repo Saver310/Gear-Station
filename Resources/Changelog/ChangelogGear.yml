@@ -49,5 +49,12 @@ Entries:
   id: 3701
   time: '2026-11-25T14:53:29.000000+00:00'
   url: https://github.com/gear-station/Gear-Station/pull/37
+- author: Saver310
+  changes:
+  - message: Added Dr. Gibb bottles.
+    type: Add
+  id: 4001
+  time: '2026-11-25T15:42:25.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/40
 Order: -1
 
