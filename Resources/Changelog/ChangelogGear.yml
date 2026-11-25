@@ -26,5 +26,12 @@ Entries:
   id: 3501
   time: '2026-11-23T17:10:14.000000+00:00'
   url: https://github.com/gear-station/Gear-Station/pull/35
+- author: Saver310
+  changes:
+  - message: Recolored Dr. Gibb to dark red instead of dark green.
+    type: Tweak
+  id: 3801
+  time: '2026-11-25T14:50:25.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/38
 Order: -1
 
