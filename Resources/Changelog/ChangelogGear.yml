@@ -56,5 +56,12 @@ Entries:
   id: 4001
   time: '2026-11-25T15:42:25.000000+00:00'
   url: https://github.com/gear-station/Gear-Station/pull/40
+- author: Saver310
+  changes:
+  - message: Minor fill graphic fix for Dr. Gibb bottles.
+    type: Fix
+  id: 4101
+  time: '2026-11-26T09:49:53.000000+00:00'
+  url: https://github.com/gear-station/Gear-Station/pull/41
 Order: -1
 
