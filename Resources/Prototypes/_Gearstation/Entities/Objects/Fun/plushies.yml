@@ -190,7 +190,7 @@
   parent: PlushieVox
   id: PlushieVoxZeal
   name: chemist vox plushie
-  description: A slightly burnt plushie resembling a certian chemist vox. It smells faintly of sulfuric acid and war crimes.
+  description: A slightly burnt plushie resembling a certain chemist vox. It smells faintly of sulfuric acid and war crimes.
   components:
   - type: Sprite
     sprite: _Gearstation/Objects/Fun/Plushies/zeal.rsi
